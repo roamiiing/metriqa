@@ -1,0 +1,38 @@
+{
+  "name": "metriqa",
+  "version": "0.1.0",
+  "description": "Measurement units management made easy and well-typed",
+  "repository": "github:roamiiing/metriqa",
+  "main": "dist/metriqa.cjs.js",
+  "module": "dist/metriqa.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/metriqa.es.js",
+      "require": "./dist/metriqa.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest"
+  },
+  "keywords": [
+    "measurement",
+    "unit",
+    "math",
+    "physics"
+  ],
+  "author": "Vitaliy Lyovkin <roamiiing@roamiiing.ru> (https://github.com/roamiiing)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6",
+    "vite-plugin-dts": "^0.9.10",
+    "vitest": "^0.7.6"
+  }
+}
